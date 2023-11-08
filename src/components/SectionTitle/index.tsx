@@ -5,8 +5,8 @@ import {
   ArticleImgContainer,
   SectionContainer,
 } from './style'
-import { Box } from '@chakra-ui/react'
 import ImgHomePage from '../../assets/rafiki-2.png'
+import Button from '../Button'
 const SectionTitle = () => {
   return (
     <SectionContainer>
@@ -16,32 +16,19 @@ const SectionTitle = () => {
           <p>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
         </ArticleTitleContainer>
         <ArticleButtonContainer>
-          <Box
+          <Button
+            name="Pessoa Usuaria"
+            color="#fff"
             bg="#018762"
-            as="button"
-            color="white"
-            fontSize="18px"
-            fontWeight="700"
-            borderRadius="8px"
-            width="192px"
-            height="48px"
-          >
-            Pessoa Juridica
-          </Box>
-          <Box
+            padding="0.75rem 2rem"
+          />
+          <Button
             bg="#fff"
             border="2px"
             borderColor="##018762"
-            as="button"
-            color="#018762"
-            fontSize="18px"
-            fontWeight="700"
-            borderRadius="8px"
-            width="192px"
-            height="48px"
-          >
-            Profissional
-          </Box>
+            name="Profissional"
+            padding="0.625rem 2.75rem"
+          />
         </ArticleButtonContainer>
       </SectionTitleContainer>
       <ArticleImgContainer>

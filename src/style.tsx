@@ -15,14 +15,8 @@ const GlobalCss = createGlobalStyle`
     height: auto;
     object-fit: cover;
   }
-  .container {
-    max-width: 1238px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .header-bg {
-    background-color: #eeeeee;
-  }
+
+
 `
 
 export default GlobalCss

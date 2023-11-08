@@ -1,16 +1,30 @@
+import Linkedin from '../../assets/linkedin.png'
+import Facebook from '../../assets/facebook.png'
+import Instagram from '../../assets/instagram.png'
+import {
+  ArticleImgFooter,
+  FooterContainer,
+  NavFooter,
+  SpanFooter,
+} from './style'
+
 const Footer = () => {
   return (
-    <footer>
+    <FooterContainer>
       <nav>
-        <ul>
+        <NavFooter>
           <li>Home</li>
           <li>Pessoa Usuaria</li>
           <li>Profissional</li>
-        </ul>
+        </NavFooter>
       </nav>
-      <article></article>
-      <span>Desafio Front-end Lacrei</span>
-    </footer>
+      <ArticleImgFooter>
+        <img src={Facebook} alt="" />
+        <img src={Instagram} alt="" />
+        <img src={Linkedin} alt="" />
+      </ArticleImgFooter>
+      <SpanFooter>Desafio Front-end Lacrei</SpanFooter>
+    </FooterContainer>
   )
 }
 
