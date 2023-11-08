@@ -7,7 +7,7 @@ const GlobalCss = createGlobalStyle`
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    //font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
   img {
     display: block;
@@ -16,9 +16,12 @@ const GlobalCss = createGlobalStyle`
     object-fit: cover;
   }
   .container {
-    max-width: 1366px;
+    max-width: 1238px;
     width: 100%;
     margin: 0 auto;
+  }
+  .header-bg {
+    background-color: #eeeeee;
   }
 `
 

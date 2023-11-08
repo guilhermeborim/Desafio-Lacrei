@@ -1,5 +1,13 @@
+import Header from './components/Header/index'
+import GlobalCss from './style'
+
 function App() {
-  return <h1>oi</h1>
+  return (
+    <>
+      <GlobalCss />
+      <Header />
+    </>
+  )
 }
 
 export default App
