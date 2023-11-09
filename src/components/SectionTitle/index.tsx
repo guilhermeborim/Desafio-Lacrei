@@ -1,40 +1,24 @@
-import {
-  SectionTitleContainer,
-  ArticleTitleContainer,
-  ArticleButtonContainer,
-  ArticleImgContainer,
-  SectionContainer,
-} from './style'
 import ImgHomePage from '../../assets/rafiki-2.png'
-import Button from '../Button'
+
+import * as S from './style'
+
 const SectionTitle = () => {
   return (
-    <SectionContainer>
-      <SectionTitleContainer>
-        <ArticleTitleContainer>
+    <S.SectionContainer>
+      <S.SectionTitleContainer>
+        <S.ArticleTitleContainer>
           <h1>Boas vindas a Lacrei Saude</h1>
           <p>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
-        </ArticleTitleContainer>
-        <ArticleButtonContainer>
-          <Button
-            name="Pessoa Usuaria"
-            color="#fff"
-            bg="#018762"
-            padding="0.75rem 2rem"
-          />
-          <Button
-            bg="#fff"
-            border="2px"
-            borderColor="##018762"
-            name="Profissional"
-            padding="0.625rem 2.75rem"
-          />
-        </ArticleButtonContainer>
-      </SectionTitleContainer>
-      <ArticleImgContainer>
+        </S.ArticleTitleContainer>
+        <S.ArticleButtonContainer>
+          <S.LinkUser to="user-person">Pessoa Usuaria</S.LinkUser>
+          <S.LinkProf to="profissional">Profissional</S.LinkProf>
+        </S.ArticleButtonContainer>
+      </S.SectionTitleContainer>
+      <S.ArticleImgContainer>
         <img src={ImgHomePage} alt="" />
-      </ArticleImgContainer>
-    </SectionContainer>
+      </S.ArticleImgContainer>
+    </S.SectionContainer>
   )
 }
 

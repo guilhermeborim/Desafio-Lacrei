@@ -1,30 +1,30 @@
 import { useLocation } from 'react-router-dom'
-import { HeaderContainer, LinkHeader, NavHeader } from './style'
+import * as S from './style'
 const Header = () => {
   const location = useLocation()
   return (
-    <HeaderContainer>
+    <S.HeaderContainer>
       <h2>Lacrei</h2>
       <nav>
-        <NavHeader>
-          <LinkHeader to="/" isActive={location.pathname === '/'}>
+        <S.NavHeader>
+          <S.LinkHeader to="/" isActive={location.pathname === '/'}>
             Home
-          </LinkHeader>
-          <LinkHeader
+          </S.LinkHeader>
+          <S.LinkHeader
             to="user-person"
             isActive={location.pathname === '/user-person'}
           >
             Pessoa Usuaria
-          </LinkHeader>
-          <LinkHeader
+          </S.LinkHeader>
+          <S.LinkHeader
             to="profissional"
             isActive={location.pathname === '/profissional'}
           >
             Profissional
-          </LinkHeader>
-        </NavHeader>
+          </S.LinkHeader>
+        </S.NavHeader>
       </nav>
-    </HeaderContainer>
+    </S.HeaderContainer>
   )
 }
 

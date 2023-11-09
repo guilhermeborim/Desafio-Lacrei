@@ -5,7 +5,7 @@ export const ParagrafoUser = styled.p`
   border-left: 5px solid #018762;
   line-height: 2rem;
   font-size: 1.5rem;
-  padding-left: 16px;
+  padding-left: 1rem;
 `
 
 export const ArticleTitleUserPerson = styled(ArticleTitleContainer)`

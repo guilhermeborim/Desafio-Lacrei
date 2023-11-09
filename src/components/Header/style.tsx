@@ -6,15 +6,15 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: #eeeeee;
-  padding: 8px 64px;
+  padding: 0.5rem 4rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
   }
   h2 {
     color: #018762;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
   }
 `
@@ -24,9 +24,9 @@ export const NavHeader = styled.ul`
   align-items: center;
 
   @media (max-width: 768px) {
-    margin-top: 16px;
+    margin-top: 1rem;
     li:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 1.25rem;
     }
   }
 `
@@ -34,11 +34,11 @@ interface LinkHeaderProps {
   isActive?: boolean
 }
 export const LinkHeader = styled(Link)<LinkHeaderProps>`
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   color: ${(props) => (props.isActive ? '#018762' : '#1F1F1F')};
   &:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 2.5rem;
   }
 `
