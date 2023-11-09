@@ -34,17 +34,14 @@ export const NavHeader = styled.ul`
     }
   }
 `
-
 interface LinkHeaderProps {
-  clicked?: boolean
+  isActive?: boolean
 }
-
 export const LinkHeader = styled(Link)<LinkHeaderProps>`
-  color: ${(props) => (props.clicked ? '#018762' : '#1F1F1F')};
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-
+  color: ${(props) => (props.isActive ? '#018762' : '#1F1F1F')};
   &:not(:last-child) {
     margin-right: 40px;
   }

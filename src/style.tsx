@@ -16,7 +16,6 @@ const GlobalCss = createGlobalStyle`
     object-fit: cover;
   }
 
-
 `
 
 export default GlobalCss
