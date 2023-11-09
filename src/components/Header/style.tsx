@@ -23,10 +23,6 @@ export const NavHeader = styled.ul`
   display: flex;
   align-items: center;
 
-  li:not(:last-child) {
-    margin-right: 40px;
-  }
-
   @media (max-width: 768px) {
     margin-top: 16px;
     li:not(:last-child) {

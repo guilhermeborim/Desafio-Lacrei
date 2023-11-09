@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { NavHeader } from '../Header/style'
 
@@ -30,4 +31,17 @@ export const SpanFooter = styled.span`
   color: #515151;
   font-weight: 400;
   font-size: 12px;
+`
+
+interface LinkFooterProps {
+  isActive?: boolean
+}
+export const LinkFooter = styled(Link)<LinkFooterProps>`
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: ${(props) => (props.isActive ? '#018762' : '#1F1F1F')};
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 `
